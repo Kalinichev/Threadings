@@ -15,7 +15,10 @@ for i in range(5):
     thr_list.append(thr)
     thr.start()
 
-print(thr_list)
+for i in thr_list:
+    i.join()
+
+print('Finish')
 #
 # print('old_name:', threading.main_thread().name)
 # threading.main_thread().name = 'result'
