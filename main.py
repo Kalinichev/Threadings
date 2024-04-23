@@ -10,7 +10,7 @@ def get_data(data, value):
 
 thr_list = []
 
-for i in range(5):
+for i in range(4):
     thr = threading.Thread(target=get_data, args=(str(time.time()), i,), name=f'Thread_{i}')
     thr_list.append(thr)
     thr.start()
@@ -18,6 +18,7 @@ for i in range(5):
 for i in thr_list:
     i.join()
 
+print(thr_list)
 print('Finish')
 #
 # print('old_name:', threading.main_thread().name)
