@@ -6,6 +6,9 @@ value = 0
 locker = threading.Lock()
 
 
+# locker = threading.RLock() то же, но locker.release() может выполянить только тот, кто делал locker.acquire()
+
+
 def inc_value():
     global value
     while True:
