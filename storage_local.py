@@ -4,18 +4,18 @@ import threading
 data = threading.local()
 
 
-def get():
-    print(data.value)
+def get_name():
+    print(data.name)
 
 
 def t1():
-    data.value = 111
-    get()
+    data.name = threading.current_thread().name
+    get_name()
 
 
 def t2():
-    data.value = 222
-    get()
+    data.name = threading.current_thread().name
+    get_name()
 
 
 threading.Thread(target=t1).start()
