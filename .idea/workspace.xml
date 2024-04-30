@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4665b15-b789-47c1-831b-dcea27c5866b" name="Changes" comment="Lock()">
-      <change beforePath="$PROJECT_DIR$/locks.py" beforeDir="false" afterPath="$PROJECT_DIR$/locks.py" afterDir="false" />
+    <list default="true" id="f4665b15-b789-47c1-831b-dcea27c5866b" name="Changes" comment="Lock() +">
+      <change afterPath="$PROJECT_DIR$/timer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +40,7 @@
     "Python.daemons.executor": "Run",
     "Python.locks.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.timer.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -56,7 +58,7 @@
       <recent name="D:\IT\Programming\Python\Courses\Threadings\Treading\" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.locks">
+  <component name="RunManager" selected="Python.timer">
     <configuration name="daemons" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Treading" />
       <option name="ENV_FILES" value="" />
@@ -126,8 +128,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="timer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Treading" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/timer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.timer" />
         <item itemvalue="Python.locks" />
         <item itemvalue="Python.daemons" />
         <item itemvalue="Python.main" />
@@ -150,7 +176,7 @@
       <option name="presentableId" value="Default" />
       <updated>1713475810722</updated>
       <workItem from="1713475818218" duration="11036000" />
-      <workItem from="1714497886880" duration="1302000" />
+      <workItem from="1714497886880" duration="1975000" />
     </task>
     <task id="LOCAL-00001" summary="thread and function">
       <option name="closed" value="true" />
@@ -224,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714499101159</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Lock() +">
+      <option name="closed" value="true" />
+      <created>1714499354998</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1714499354998</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,11 +297,12 @@
     <MESSAGE value="i threadings i times + join" />
     <MESSAGE value="daemon==True" />
     <MESSAGE value="Lock()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lock()" />
+    <MESSAGE value="Lock() +" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lock() +" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Treading$daemons.coverage" NAME="daemons Coverage Results" MODIFIED="1713901281211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Treading$main.coverage" NAME="main Coverage Results" MODIFIED="1713900262025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Treading$locks.coverage" NAME="locks Coverage Results" MODIFIED="1714498901472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Treading$locks.coverage" NAME="locks Coverage Results" MODIFIED="1714498955968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
