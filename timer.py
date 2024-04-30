@@ -9,10 +9,10 @@ def somefunc():
 
 
 thr = threading.Timer(5, somefunc)
-
+thr.daemon = True
 thr.start()
 
-for _ in range(3):
+for _ in range(10):
     print('azazazazazazazazazazazazaz')
     time.sleep(1)
 
